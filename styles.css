@@ -1,0 +1,274 @@
+ @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+      
+      font: small-caps bold 15px / 1 sans-serif;
+     
+    
+    }
+
+    body {
+      background-color: #000; /* Black background */
+      color: #ffcc00; /* Yellow text */
+      padding: 20px;
+      background-color: #000; /* Black background */
+            font-family: 'Optima', sans-serif; /* Set font to Optima */
+    }
+    .logo {
+        display: flex;
+        position: fixed;
+        align-items: center;
+        border-width: 10px;
+        border-radius: 10px;
+        border-bottom: #eeff00;
+        border-top: #484ae7;
+        font-size: 24px;
+        /* Adjust the font size as needed */
+        font-weight: bold;
+        color: #000;
+        /* Text color */
+      }
+
+      .logo img {
+        border-width: 10px;
+        border-radius: 10px;
+        border-bottom: #eeff00;
+        border-top: #484ae7;
+        width: 40px;
+        /* Adjust the width as needed */
+        height: auto;
+        /* Maintain aspect ratio */
+        margin-right: 10px;
+        /* Space between image and text */
+      }
+
+      .logo span {
+    display: inline-block;
+    border-width: 10px;
+        border-radius: 10px;
+        border-bottom: #eeff00;
+        border-top: #484ae7;
+    font-size: 2rem; /* Adjust font size */
+    font-weight: bold;
+    color: #eeff00; /* Neon green */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide text that hasn't been "typed" yet */
+    border-right: 2px solid #f2ff40; /* Blinking cursor */
+    width: 7ch; /* Match the number of characters */
+    animation: typing 4s steps(7, end) infinite, blink 0.75s step-end infinite alternate;
+}
+
+    h2 {
+      color: #ffcc00; /* Yellow color */
+      margin: 20px 0;
+      font-size: 2em; /* Increased font size */
+      border-bottom: 2px solid #ffcc00; /* Yellow underline */
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .search-bar-container {
+      position: fixed; /* Fixed position */
+      top: 20px; /* Adjust to your liking */
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 30px;
+      z-index: 1000; /* Ensure it's on top */
+      display: flex; /* Align input and button horizontally */
+    }
+
+    #search-bar {
+      padding: 12px;
+      width: 350px;
+      border: 2px solid #ffcc00; /* Yellow border */
+      background-color: #333; /* Dark background for input */
+      color: white; /* White text */
+      border-radius: 5px;
+      margin-right: 10px;
+      outline: none;
+      font-size: 1em; /* Increased font size */
+    }
+
+    #search-button {
+      padding: 12px 20px;
+      background-color: #ffcc00; /* Yellow background */
+      border: none;
+      border-radius: 5px;
+      color: black; /* Black text */
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1em; /* Increased font size */
+      transition: background-color 0.3s;
+    }
+
+    #search-button:hover {
+      background-color: #e6b800; /* Darker yellow on hover */
+    }
+
+    .genre-section {
+     margin: 50px;/* Space for fixed search bar */
+    }
+
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      scroll-behavior: smooth;
+      padding-bottom: 10px;
+    }
+
+    .carousel::-webkit-scrollbar {
+      display: none; /* Hide scrollbar */
+    }
+
+    .movie-card {
+      background-color: #222; /* Dark gray for movie cards */
+      border-radius: 10px;
+      min-width: 200px;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .movie-card:hover {
+      transform: scale(1.05);
+    }
+
+    .movie-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .movie-card h3 {
+      font-size: 16px;
+      padding: 10px;
+      color: #ffcc00; /* Yellow text */
+    }
+
+    /* "More" button */
+    .more-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ffcc00;
+      color: black;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      margin: 20px 0;
+      transition: background-color 0.3s;
+    }
+
+    .more-button:hover {
+      background-color: #e6b800; /* Darker yellow on hover */
+    }
+
+    /* Movie details */
+    .movie-details {
+      display: flex;
+      background-color: #0c0c0c;
+      padding: 20px;
+
+      backdrop-filter: blur(10px);
+      border-color: red;
+      border-width: 5px;
+      border-radius: 10px;
+      margin: 65px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      scrollbar-width: none;
+      height: 85vh; /* Fixed height for desktop */
+      overflow-y: auto; /* Allow scrolling if content overflows */
+    }
+
+    .movie-details img {
+      width: auto;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .movie-details h2 {
+      color: #ffcc00;
+      position: inherit;
+      margin-top: 20px;
+      font-size: 2em; /* Increased font size */
+    }
+
+    .movie-details p {
+        position: inherit;
+      color: #fff;
+      margin: 10px 0;
+      font-size: 1.1em; /* Increased font size */
+    }
+
+    /* Related movies */
+    .related-movies {
+      margin-top: 20px;
+      gap: 10px;
+    }
+
+    .related-movies h3 {
+      color: #ffcc00;
+      margin-bottom: 10px;
+    }
+
+    /* Back button */
+    .back-button {
+      padding: 10px 20px;
+      background-color: #ffcc00; /* Yellow background */
+      color: black; /* Black text */
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 20px; /* Space from the top */
+      display: none; /* Hidden by default */
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #e6b800; /* Darker yellow on hover */
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      .movie-details {
+        height: auto; /* Auto height on mobile */
+      }
+
+      .search-bar-container {
+        width: 100%; /* Full width on mobile */
+        top: 10px; /* Adjust positioning */
+      }
+    }
+    .genre-buttons {
+        display: flex; /* Use flexbox for alignment */
+        flex-wrap: wrap; /* Allow wrapping of buttons */
+        justify-content: center; /* Center align buttons */
+        gap: 10px; /* Space between buttons */
+    }
+
+    .genre-button {
+        background: rgba(255, 204, 0, 0.5); /* Semi-transparent yellow */
+        color: black;
+        padding: 10px 20px;
+        border: 1px solid rgba(255, 204, 0, 0.3); /* Light border to enhance the glass effect */
+        backdrop-filter: blur(10px); /* Creates the glass effect */
+        border-radius: 10px; /* Rounded corners */
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2), 0 0 20px rgba(255, 204, 0, 0.7); /* Glow effect */
+    }
+
+    .genre-button:hover {
+        background: rgba(255, 204, 0, 0.7); /* Slightly more opaque on hover */
+        transform: translateY(-2px); /* Lift effect on hover */
+        box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3), 0 0 30px rgba(255, 204, 0, 1); /* Enhanced glow on hover */
+    }
