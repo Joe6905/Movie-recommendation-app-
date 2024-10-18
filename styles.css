@@ -272,3 +272,39 @@
         transform: translateY(-2px); /* Lift effect on hover */
         box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3), 0 0 30px rgba(255, 204, 0, 1); /* Enhanced glow on hover */
     }
+  .neumorphic-footer {
+      font: small-caps bold 50px / 1 sans-serif;
+      height: 25px;
+      width: 100%;
+        background-color: #000000; /* Dark background */
+        color: #efff11; /* Green text */
+        padding:1px;
+        margin-top: px;
+        padding: 35px;
+        margin-bottom: 0px;
+        text-align: center;
+        border-radius:5px; /* Rounded corners */
+        box-shadow: 
+            8px 8px 20px rgba(0, 0, 0, 0.3), /* Outer shadow */
+            -8px -8px 20px rgba(0, 0, 0, 0.1); /* Inner shadow */
+       
+        position: relative; /* Position relative for glow effect */
+    }
+    
+    .neumorphic-footer::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    
+        color: rgb(7, 255, 255);
+        backdrop-filter: blur(20px);
+        background: rgba(0, 0, 0, 0.15);
+        border: 1px solid #ff4314;
+        box-shadow: 0 0 10px rgb(255, 252, 80);
+        border-top: 2px solid rgb(243, 255, 70);
+         
+        z-index: -1; /* Behind the footer content */
+    }
