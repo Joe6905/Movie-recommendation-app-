@@ -1,44 +1,45 @@
-<! >
-< ="">
-<>
-  < ="-8">
-  < ="" ="=-, -=1.0">
-  <>  -  </>
-  < ="://../2?=:@400;700&=" ="">
-  < ="://../2?=:@400;700&=" ="">
-  < ="://../2?=&=" ="">
-  < ="" =".">
-</>
-<>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Recommendations - Batman Theme</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Optima&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  </head>
+<body>
     
-  < ="" ="()"> <!--      -->
-    < ="#-">
-      < ="://..//-1." =" ">
-      <>_</>
-    </>
-  </>
+    <div class="logo" onclick="refreshPage()"> <!-- Onclick refreshes the entire page -->
+        <a href="#genres-container">
+            <img src="https://i.ibb.co/ccqCJcD/l-1.png" alt="Logo Image">
+            <span>Joe_Mj</span>
+        </a>
+    </div>
+  <div class="search-bar-container">
+    <input type="text" id="search-bar" placeholder="Search for movies...">
+    <button id="search-button">Search</button><br>
+    <br>
+  </div>
 
-  < ="--">
-    < ="" ="-" ="  ...">
-    < ="-"></><>
-    <>
-  </>
-
-  < ="-"></>
+  <div id="genres-container">
+   
+  </div>
   
-  <!--    -->
-  < ="-" ="-">
-    < ="-" ="-"></>
-    < ="-" ="" =" ">
-    <2 ="-"></2>
-    < ="-"></>
-    <><> :</> < ="--"></></>
-    <><>:</> < ="-"></></>
-    < ="-" ="-"></>
-  </>
- < ="-">
-    <>    ❤️</>
-</>
-  < ="."></>
-</>
-</>
+  <!-- Movie details section -->
+  <div id="movie-details" class="movie-details">
+    <button class="back-button" id="back-button">Back</button>
+    <img id="movie-poster" src="" alt="Movie Poster">
+    <h2 id="movie-title"></h2>
+    <p id="movie-overview"></p>
+    <p><strong>Release Date:</strong> <span id="movie-release-date"></span></p>
+    <p><strong>Rating:</strong> <span id="movie-rating"></span></p>
+    <div id="related-movies" class="related-movies"></div>
+    
+  </div>
+  <script src="script.js"></script>
+  </body>
+</html>
+ 
