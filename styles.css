@@ -16,8 +16,9 @@ body {
 
 .logo {
   display: flex;
-  position: relative; /* Adjusted for small screens */
+  position:fixed; /* Adjusted for small screens */
   align-items: center;
+  left: 0%;
   justify-content: center;
   border-width: 10px;
   border-radius: 10px;
@@ -60,7 +61,7 @@ h2 {
 
 .search-bar-container {
   position: fixed;
-  top: 80px; /* Adjusted for small screen logo */
+  top: 10px; /* Adjusted for small screen logo */
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: 30px;
