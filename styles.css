@@ -264,12 +264,13 @@ h2 {
   }
 
   .genre-section {
-    margin: 0; /* Remove margin for small screens */
+    margin: 0; 
+    margin-top:100px;/* Remove margin for small screens */
   }
 
   .movie-details {
     flex-direction: column; /* Stack content vertically */
-    margin-top: 90px; /* Reduce margin */
+    margin-top: 10px; /* Reduce margin */
     height: auto; /* Allow auto height on mobile */
   }
 }
