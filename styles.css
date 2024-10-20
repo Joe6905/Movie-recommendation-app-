@@ -19,6 +19,7 @@ body {
   position:fixed; /* Adjusted for small screens */
   align-items: center;
   left: 0%;
+   top: 10px;
   justify-content: center;
   border-width: 10px;
   border-radius: 10px;
@@ -99,6 +100,7 @@ h2 {
 
 .genre-section {
   margin: 50px;
+  margin-top:80px;
 }
 
 .carousel {
