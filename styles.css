@@ -252,7 +252,7 @@ h2 {
 /* Media Queries */
 @media (max-width: 768px) {
   .logo {
-    position: absolute;
+    position: fixed;
     top: 10px; /* Positioned above the search bar */
     left: 50%;
     transform: translateX(-50%);
