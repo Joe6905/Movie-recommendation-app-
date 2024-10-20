@@ -269,7 +269,7 @@ h2 {
 
   .movie-details {
     flex-direction: column; /* Stack content vertically */
-    margin: 10px; /* Reduce margin */
+    margin-top: 90px; /* Reduce margin */
     height: auto; /* Allow auto height on mobile */
   }
 }
